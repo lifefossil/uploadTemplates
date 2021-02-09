@@ -11,3 +11,4 @@ def get_token():
     oss_file = get_oss_config_file()
     with open(oss_file, 'r', encoding="utf-8") as f:
         return load(f, Loader=Loader).get('alioss')
+

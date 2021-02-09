@@ -1,0 +1,5 @@
+alioss:
+  AccessKeyID: xxx
+  AccessKeySecret: ooo
+  bucket: ddd
+  region: http://<yourRegion>.aliyuncs.com

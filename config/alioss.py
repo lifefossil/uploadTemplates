@@ -20,3 +20,7 @@ class Alioss:
     def list_files(self, prefix):
         for obj in oss2.ObjectIterator(self.bucket, prefix=prefix):
             print(obj.key)
+
+    def list_files_v2(self, prefix):
+        for obj in oss2.ObjectIteratorV2(self.bucket, prefix=prefix, delimiter="/"):
+            print(obj.key)
